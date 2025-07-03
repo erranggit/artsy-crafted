@@ -21,8 +21,7 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-9634.up.railway.app',
-                 'https://web-production-9634.up.railway.app']
+ALLOWED_HOSTS = ['web-production-9634.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ['https://web-production-9634.up.railway.app']
 
 
