@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn ecom.wsgi:application --bind 0.0.0.0:$PORT --log-file gunicorn.log
+web: python manage.py migrate && gunicorn ecom.wsgi:application --bind 0.0.0.0:$PORT
