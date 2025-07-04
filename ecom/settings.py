@@ -19,7 +19,7 @@ if not SECRET_KEY:
     raise Exception("SECRET_KEY is missing from environment variables!")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG') == 'True'
 
 ALLOWED_HOSTS = ['web-production-9634.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ['https://web-production-9634.up.railway.app']
